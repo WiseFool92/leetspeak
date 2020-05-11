@@ -9,8 +9,15 @@ namespace LeetSpeak.Tests
     [TestMethod]
     public void LeetSpeakConverter_eTransform_3()
     {
-    LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
-    Assert.AreEqual("3", leetConverterTest.LeetSpeakConverter("e"));
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("3", leetConverterTest.LeetSpeakConverter("e"));
+    }
+
+    [TestMethod]
+    public void LeetSpeakerConverter_oTransform_0()
+    {
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("0", leetConverterTest.LeetSpeakConverter("o"));
     }
   }
 }

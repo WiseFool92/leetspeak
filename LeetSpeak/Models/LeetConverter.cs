@@ -12,6 +12,7 @@ namespace LeetSpeak
         {
           charArray[i] = '3';
         }
+        
       }
 
       string transformedString = string.Join("", charArray);
