@@ -54,5 +54,12 @@ namespace LeetSpeak.Tests
       LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
       Assert.AreEqual("Sally", leetConverterTest.LeetSpeakConverter("Sally"));
     }
+
+    [TestMethod]
+    public void LeetSpeakConverter_StringTransform_l337()
+    {
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("D0n'7 y0u l0v3 7h3z3 'S7ring' 3x3rciz3z? 1 d0!", leetConverterTest.LeetSpeakConverter("Don't you love these 'String' exercises? I do!"));
+    }
   }
 }
