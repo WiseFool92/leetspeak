@@ -33,5 +33,12 @@ namespace LeetSpeak.Tests
       LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
       Assert.AreEqual("7", leetConverterTest.LeetSpeakConverter("t"));
     }
+
+    [TestMethod]
+    public void LeetSpeakConverter_sTransform_z()
+    {
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("pz", leetConverterTest.LeetSpeakConverter("ps"));
+    }
   }
 }
