@@ -26,5 +26,12 @@ namespace LeetSpeak.Tests
       LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
       Assert.AreEqual("1", leetConverterTest.LeetSpeakConverter("I"));
     }
+
+    [TestMethod]
+    public void LeetSpeakConverter_tTransform_7()
+    {
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("7", leetConverterTest.LeetSpeakConverter("t"));
+    }
   }
 }
