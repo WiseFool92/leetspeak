@@ -1,3 +1,6 @@
+using System;
+using System.Text.RegularExpressions;
+
 namespace LeetSpeak
 {
   public class LeetSpeakTranslate
@@ -26,7 +29,7 @@ namespace LeetSpeak
         }
         else if (charArray[i] == 's')
         {
-          if (charArray[i-1] != ' ')
+          if (Regex.IsMatch(charArray[i-1].ToString(), @"^[a-zA-Z]+$") || i != 0)
           {
             charArray[i] = 'z';
           }
