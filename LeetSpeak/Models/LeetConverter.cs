@@ -27,9 +27,9 @@ namespace LeetSpeak
         {
           charArray[i] = '7';
         }
-        else if (charArray[i] == 's')
+        else if ((charArray[i] == 's' || charArray[i] == 'S') && i != 0)
         {
-          if (Regex.IsMatch(charArray[i-1].ToString(), @"^[a-zA-Z]+$") && i != 0)
+          if (Regex.IsMatch(charArray[i-1].ToString(), @"^[a-zA-Z]+$"))
           {
             charArray[i] = 'z';
           }
