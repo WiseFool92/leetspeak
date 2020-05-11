@@ -29,7 +29,7 @@ namespace LeetSpeak
         }
         else if (charArray[i] == 's')
         {
-          if (Regex.IsMatch(charArray[i-1].ToString(), @"^[a-zA-Z]+$") || i != 0)
+          if (Regex.IsMatch(charArray[i-1].ToString(), @"^[a-zA-Z]+$") && i != 0)
           {
             charArray[i] = 'z';
           }
@@ -41,7 +41,11 @@ namespace LeetSpeak
     }
     public static void Main()
     {
-
+      Console.WriteLine("Enter a sentence to translate to leetspeak!");
+      string userInput = Console.ReadLine();
+      LeetSpeakTranslate userTransformation = new LeetSpeakTranslate();
+      string finalAnswer = userTransformation.LeetSpeakConverter(userInput);
+      Console.WriteLine(finalAnswer);
     }
   }
 }

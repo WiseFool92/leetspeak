@@ -40,5 +40,12 @@ namespace LeetSpeak.Tests
       LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
       Assert.AreEqual("pz", leetConverterTest.LeetSpeakConverter("ps"));
     }
+
+    [TestMethod]
+    public void LeetSpeakConverter_sTransformFirstLetter_s()
+    {
+      LeetSpeakTranslate leetConverterTest = new LeetSpeakTranslate();
+      Assert.AreEqual("np sq", leetConverterTest.LeetSpeakConverter("np sq"));
+    }
   }
 }
