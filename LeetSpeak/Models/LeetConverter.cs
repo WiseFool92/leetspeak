@@ -12,7 +12,10 @@ namespace LeetSpeak
         {
           charArray[i] = '3';
         }
-        
+        else if (charArray[i] == 'o' || charArray[i] == 'O')
+        {
+          charArray[i] = '0';
+        }
       }
 
       string transformedString = string.Join("", charArray);
